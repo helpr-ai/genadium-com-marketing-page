@@ -13,11 +13,9 @@
           <span class="ml-1 px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-md">AI Agents that work for you</span>
         </a>
         <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="#problem" class="hover:text-slate-600">Het Probleem</a>
           <a href="#solution" class="hover:text-slate-600">De Oplossing</a>
+          <a href="#problem" class="hover:text-slate-600">Het Probleem</a>
           <a href="#approach" class="hover:text-slate-600 font-semibold">🎯 5-Staps Methode</a>
-          <a href="#platform-service" class="hover:text-slate-600">Platform + Dienst</a>
-          <a href="#value" class="hover:text-slate-600">Waarde</a>
           <a href="#contact" class="hover:text-slate-600">Contact</a>
         </nav>
         <div class="flex items-center gap-2">
@@ -47,21 +45,115 @@
           </h1>
           
           <p class="mt-8 text-2xl sm:text-3xl text-slate-600 leading-relaxed max-w-5xl mx-auto font-light">
-            Terwijl iedereen over AI praat, <strong class="font-semibold text-slate-900">blijf jij achter met onzekere processen</strong> en <span class="text-red-600 font-semibold">onduidelijke mogelijkheden</span>.<br>
-            <span class="text-lg text-slate-500 block mt-4">Wij brengen je processen helder in kaart en tonen precies waar AI vandaag al impact kan maken.</span>
+           <span class="text-lg text-slate-500 block mt-4">Met ons 5-stappenplan loop je razendsnel voorop!<br></br>Wij brengen je processen helder in kaart en tonen precies waar AI direct impact kan maken.</span>
           </p>
           
           <div class="mt-12 flex justify-center">
             <a href="#contact" class="group relative inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold text-xl rounded-2xl hover:shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 shadow-xl">
-              <span class="relative z-10">🎯 Doe de gratis intake</span>
+              <span class="relative z-10">🎯 Plan de gratis intake</span>
               <ArrowRightIcon class="h-6 w-6 ml-3 group-hover:translate-x-1 transition-transform" />
               <div class="absolute inset-0 bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
           </div>
           
           <div class="mt-12 text-slate-500 text-sm">
-            ✨ Geadviseerd door <strong>200+ bedrijven</strong> • 🏆 <strong>Bewezen resultaten</strong> • 🚀 <strong>Direct implementeerbaar</strong>
+            ✨ Geadviseerd door <strong>toonaangevende bedrijven</strong> • 🏆 <strong>Bewezen resultaten</strong> • 🚀 <strong>Direct implementeerbaar</strong>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-16 bg-slate-900 border-y border-slate-700">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
+            Vertrouwd door toonaangevende bedrijven
+          </p>
+          <h3 class="text-2xl font-bold text-white">
+            Geadviseerd door <span class="text-blue-400">innovatieve organisaties</span>
+          </h3>
+        </div>
+        
+        <div class="relative">
+          <Carousel
+            :autoplay="3000"
+            :wrap-around="true"
+            :items-to-show="4"
+            :items-to-scroll="1"
+            :transition="500"
+            :breakpoints="{
+              700: {
+                itemsToShow: 2,
+                itemsToScroll: 1,
+              },
+              1024: {
+                itemsToShow: 3,
+                itemsToScroll: 1,
+              }
+            }"
+          >
+            <Slide key="greenet">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/greenet.svg" 
+                  alt="Greenet"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <Slide key="intra">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/intra.svg" 
+                  alt="Intra"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <Slide key="meever">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/meever.svg" 
+                  alt="Meever"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <Slide key="pd_solutions">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/pd_solutions.svg" 
+                  alt="PD Solutions"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <!-- Duplicate slides for seamless loop -->
+            <Slide key="greenet-2">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/greenet.svg" 
+                  alt="Greenet"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <Slide key="intra-2">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/intra.svg" 
+                  alt="Intra"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+          </Carousel>
         </div>
       </div>
     </section>
@@ -78,7 +170,7 @@
           
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-8 leading-tight">
             <span class="block">Zo pakken wij jouw</span>
-            <span class="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">AI-uitdaging aan</span>
+            <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">AI-uitdaging aan</span>
           </h2>
           
           <p class="text-xl sm:text-2xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
@@ -87,7 +179,7 @@
           </p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Step 1: Knowledge -->
           <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
@@ -120,7 +212,19 @@
             <h3 class="text-2xl font-bold text-slate-900 mb-4">AI-kansen identificeren</h3>
             <p class="text-slate-600 leading-6">
               Op basis van je proceskaarten tonen we <strong>precies waar AI vandaag al impact</strong> kan maken. 
-              Van generatieve AI tot autonome agents - we wijzen de weg.
+              Van generatieve AI tot autonome agents.
+            </p>
+          </div>
+
+          <!-- Step 4: AI Implementation -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30">
+              <CogIcon class="h-8 w-8 text-white" />
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">AI implementatie</h3>
+            <p class="text-slate-600 leading-6">
+              Van plan naar praktijk: we bouwen <strong>werkende AI-oplossingen</strong> die direct waarde leveren. 
+              Geen eindeloze pilots, wel concrete resultaten die je team direct kan gebruiken.
             </p>
           </div>
         </div>
@@ -130,12 +234,19 @@
           <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
           <div class="relative">
             <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
-              💡 Het resultaat? <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Duidelijkheid over je AI-mogelijkheden</span>
+              💡 Het resultaat? <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Werkende AI-oplossingen</span>
             </h3>
-            <p class="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Van vaag AI-concept naar concrete implementatieplannen. Van onzekerheid naar vertrouwen. 
+            <p class="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed mb-8">
+              Van vaag AI-concept naar concrete implementatie en kennis over AI. Van onzekerheid naar vertrouwen. 
               <strong class="text-white">Zo pak je AI slim aan.</strong>
             </p>
+            <div class="mt-8">
+              <a href="#approach" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-blue-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:from-emerald-600 hover:to-blue-700 transition-all duration-300 hover:scale-105">
+                <span>💡</span>
+                <span>Leer hier over onze methode...</span>
+                <ArrowRightIcon class="h-5 w-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -152,12 +263,12 @@
           <h2 class="text-5xl sm:text-6xl font-black text-slate-900 mb-8 leading-tight">
             <span class="block">Waarom</span>
             <span class="block text-red-600">95% van AI-projecten</span>
-            <span class="block">spectaculair faalt</span>
+            <span class="block">faalt</span>
           </h2>
           
           <p class="text-2xl text-slate-600 leading-relaxed font-light">
             <strong class="font-semibold text-slate-900">Herkenbaar?</strong> Je bedrijf wil "iets met AI", maar weet niet waar te beginnen. 
-            <span class="block mt-4 text-red-600 font-semibold">Miljoenen verspild aan consultants die niks opleveren.</span>
+
           </p>
         </div>
         
@@ -169,7 +280,7 @@
               <div class="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-red-500/30">
                 <ExclamationTriangleIcon class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-2xl font-bold text-slate-900 mb-4">🚫 Te groot starten</h3>
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Te groot starten</h3>
               <p class="text-slate-600 leading-6">
                 Megalomane plannen zonder fundament. Bedrijven willen direct een volledig AI-ecosysteem bouwen voordat ze hun processen begrijpen.
               </p>
@@ -183,7 +294,7 @@
               <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30">
                 <QuestionMarkCircleIcon class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-2xl font-bold text-slate-900 mb-4">❓ Te vaag</h3>
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Te vaag</h3>
               <p class="text-slate-600 leading-6">
                 "We willen iets met AI" zonder concrete doelen. Geen specifieke use cases, geen meetbare resultaten, geen helder eindplaatje.
               </p>
@@ -197,7 +308,7 @@
               <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-yellow-500/30">
                 <CogIcon class="h-8 w-8 text-white" />
               </div>
-              <h3 class="text-2xl font-bold text-slate-900 mb-4">⚙️ Te technisch</h3>
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Te technisch</h3>
               <p class="text-slate-600 leading-6">
                 Focus op technologie, niet op echte problemen. Teams verdwalen in complexe AI-architecturen terwijl de business case onduidelijk blijft.
               </p>
@@ -205,50 +316,13 @@
           </div>
         </div>
         
-        <!-- Additional pain points -->
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div class="bg-white rounded-2xl p-6 border shadow-lg relative overflow-hidden border-orange-200">
-            <div class="absolute -top-2 -right-2 w-16 h-16 rounded-full opacity-10 bg-orange-500"></div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-orange-500">
-                <PuzzlePieceIcon class="h-6 w-6 text-white" />
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">🧩 Chaos in je processen</h3>
-              <p class="text-slate-600 text-sm mb-3">Kennis zit opgesloten in hoofden</p>
-              <div class="text-sm font-semibold text-orange-600">Niemand weet hoe dingen écht werken</div>
-            </div>
-          </div>
-          
-          <div class="bg-white rounded-2xl p-6 border shadow-lg relative overflow-hidden border-yellow-200">
-            <div class="absolute -top-2 -right-2 w-16 h-16 rounded-full opacity-10 bg-yellow-500"></div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-yellow-500">
-                <ClockIcon class="h-6 w-6 text-white" />
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">⏰ Eindeloze consultancy-sessies</h3>
-              <p class="text-slate-600 text-sm mb-3">Wekenlange workshops zonder resultaat</p>
-              <div class="text-sm font-semibold text-yellow-600">€50k+ weg, nog steeds geen overzicht</div>
-            </div>
-          </div>
-          
-          <div class="bg-white rounded-2xl p-6 border shadow-lg relative overflow-hidden border-red-200">
-            <div class="absolute -top-2 -right-2 w-16 h-16 rounded-full opacity-10 bg-red-500"></div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-red-500">
-                <XMarkIcon class="h-6 w-6 text-white" />
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 mb-2">💸 Projecten die nergens toe leiden</h3>
-              <p class="text-slate-600 text-sm mb-3">Geen fundament = geen succes</p>
-              <div class="text-sm font-semibold text-red-600">AI blijft een dure gimmick</div>
-            </div>
-          </div>
-        </div>
+       
         
         <!-- Bottom CTA -->
         <div class="mt-16 text-center">
           <div class="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-emerald-500 to-blue-600 text-white rounded-2xl font-bold text-xl shadow-lg">
             <span>💡</span>
-            <span>Maar het hoeft niet zo te zijn...</span>
+            <span>Leer hier over onze methode...</span>
             <ArrowRightIcon class="h-5 w-5" />
           </div>
         </div>
@@ -268,74 +342,73 @@
           </div>
           
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-8 leading-tight">
-            <span class="block">Daarom falen</span>
-            <span class="block bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">onze projecten niet</span>
+            <span class="block">Hierom zijn</span>
+            <span class="block bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">onze projecten wel</span>
+            <span class="block">succesvol</span>
           </h2>
           
           <p class="text-xl sm:text-2xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            Wij pakken het fundamenteel anders aan. <strong class="text-slate-900">Bewezen strategie, concrete resultaten.</strong>
+            Met ons 5-stappenplan pakken we het fundamenteel anders aan. <strong class="text-slate-900">Bewezen strategie, concrete resultaten.</strong>
           </p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Instead of Too Big -> Start Small -->
-          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg shadow-red-500/30">
-                <XMarkIcon class="h-8 w-8 text-white" />
-              </div>
-              <div class="text-3xl">➜</div>
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/30">
-                <CheckCircleIcon class="h-8 w-8 text-white" />
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4">
-              <span class="text-red-600">Te groot starten</span> → <span class="text-emerald-600">Klein beginnen</span>
-            </h3>
-            <p class="text-slate-600 leading-6">
-              Wij brengen eerst <strong>alle processen in kaart</strong>, zodat we de <strong>laaghangende vruchten</strong> kunnen kiezen. 
-              Direct resultaat in plaats van megalomane plannen.
-            </p>
-          </div>
-
-          <!-- Instead of Too Vague -> Concrete -->
-          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg shadow-red-500/30">
-                <XMarkIcon class="h-8 w-8 text-white" />
-              </div>
-              <div class="text-3xl">➜</div>
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30">
-                <CheckCircleIcon class="h-8 w-8 text-white" />
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4">
-              <span class="text-red-600">Te vaag</span> → <span class="text-blue-600">Concreet</span>
-            </h3>
-            <p class="text-slate-600 leading-6">
-              Door proceskaarten krijg je <strong>concrete taakjes</strong> waar je direct op kunt inspringen. 
-              Geen abstracte doelen, wel heldere actiepunten.
-            </p>
-          </div>
-
-          <!-- Instead of Too Technical -> Simple -->
-          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg shadow-red-500/30">
-                <XMarkIcon class="h-8 w-8 text-white" />
-              </div>
-              <div class="text-3xl">➜</div>
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/30">
-                <CheckCircleIcon class="h-8 w-8 text-white" />
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4">
-              <span class="text-red-600">Te technisch</span> → <span class="text-purple-600">Praktisch</span>
-            </h3>
-            <p class="text-slate-600 leading-6">
-              <strong>Wij pakken de techniek op</strong> en focussen op wat voor het oprapen ligt. 
-              Geen totale transformatie, wel slimme quick wins.
-            </p>
+        <!-- Comparison Table -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr class="border-b border-slate-200">
+                  <th class="w-1/5 text-left py-4 px-6"></th>
+                  <th class="w-2/5 text-left py-4 px-6 font-bold text-red-600 text-lg">
+                    <div class="flex items-center gap-2">
+                      <XMarkIcon class="h-5 w-5" />
+                      <span>Andere aanpakmethoden</span>
+                    </div>
+                  </th>
+                  <th class="w-2/5 text-left py-4 px-6 font-bold text-emerald-600 text-lg">
+                    <div class="flex items-center gap-2">
+                      <CheckCircleIcon class="h-5 w-5" />
+                      <span>Onze Genadium-methode</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                  <td class="py-6 px-6 font-semibold text-slate-900 bg-slate-50">Startstrategie</td>
+                  <td class="py-6 px-6 text-left bg-red-50 hover:bg-red-100 transition-colors">
+                    <div class="text-red-600 font-semibold mb-2">Te groot starten</div>
+                    <div class="text-slate-600 text-sm">Megalomane plannen zonder fundament. Volledig AI-ecosysteem bouwen voordat processen duidelijk zijn.</div>
+                  </td>
+                  <td class="py-6 px-6 text-left bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                    <div class="text-emerald-600 font-semibold mb-2">Klein beginnen</div>
+                    <div class="text-slate-600 text-sm">AI interviews voor proceskaarten. Laaghangende vruchten eerst. Direct resultaat.</div>
+                  </td>
+                </tr>
+                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
+                  <td class="py-6 px-6 font-semibold text-slate-900 bg-slate-50">Doelstelling</td>
+                  <td class="py-6 px-6 text-left bg-red-50 hover:bg-red-100 transition-colors">
+                    <div class="text-red-600 font-semibold mb-2">Te vaag</div>
+                    <div class="text-slate-600 text-sm">"We willen iets met AI" zonder concrete doelen. Geen specifieke use cases of meetbare resultaten.</div>
+                  </td>
+                  <td class="py-6 px-6 text-left bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                    <div class="text-emerald-600 font-semibold mb-2">Concreet</div>
+                    <div class="text-slate-600 text-sm">Proceskaarten geven concrete taakjes. Heldere actiepunten in plaats van abstracte doelen.</div>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="py-6 px-6 font-semibold text-slate-900 bg-slate-50">Focus</td>
+                  <td class="py-6 px-6 text-left bg-red-50 hover:bg-red-100 transition-colors">
+                    <div class="text-red-600 font-semibold mb-2">Te technisch</div>
+                    <div class="text-slate-600 text-sm">Focus op technologie, niet op echte problemen. Teams verdwalen in complexe AI-architecturen.</div>
+                  </td>
+                  <td class="py-6 px-6 text-left bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                    <div class="text-emerald-600 font-semibold mb-2">Praktisch</div>
+                    <div class="text-slate-600 text-sm">Wij pakken de techniek op en focussen op wat voor het oprapen ligt. Slimme quick wins.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         
@@ -346,10 +419,17 @@
             <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
               🎯 Het geheim? <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">Eerst processen, dan AI</span>
             </h3>
-            <p class="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <p class="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed mb-8">
               Zonder helder beeld van je processen is AI gokwerk. Met onze aanpak leg je eerst het fundament, 
               <strong class="text-white">dan bouw je er succesvolle AI op</strong>.
             </p>
+            <div class="mt-8">
+              <a href="#approach" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-blue-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:from-emerald-600 hover:to-blue-700 transition-all duration-300 hover:scale-105">
+                <span>💡</span>
+                <span>Leer hier over onze methode...</span>
+                <ArrowRightIcon class="h-5 w-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -370,7 +450,7 @@
           </h2>
           
           <p class="text-2xl text-slate-300 leading-relaxed font-light max-w-3xl mx-auto">
-            <strong class="text-white">Bewezen bij 200+ bedrijven.</strong> Van versnipperde processen naar werkende AI Agents — in weken, niet jaren.
+            <strong class="text-white">Bewezen bij toonaangevende bedrijven.</strong> Van versnipperde processen naar werkende AI Agents.
           </p>
         </div>
         
@@ -491,7 +571,7 @@
                   </div>
                   <div class="flex items-center gap-2 text-xs text-slate-400">
                     <div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div>
-                    <span>Directe proceskaarten</span>
+                    <span>Direct proceskaarten</span>
                   </div>
                 </div>
               </div>
@@ -519,7 +599,7 @@
                   <h3 class="text-xl font-bold text-white mb-2">Roadmap</h3>
                 </div>
                 
-                <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">Quick wins en prioriteiten voor AI-adoptie. Van inzicht naar concrete actiepunten die direct waarde leveren.</p>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">Quick wins en prioriteiten voor AI-adoptie. Van inzicht naar concrete actiepunten.</p>
                 
                 <div class="space-y-2">
                   <div class="flex items-center gap-2 text-xs text-slate-400">
@@ -614,7 +694,7 @@
         <!-- Header -->
         <div class="text-center mb-16">
           <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 border border-emerald-400/30 rounded-full text-emerald-700 font-bold mb-6">
-            ⏰ Beperkt beschikbaar
+            ⏰ Kom in contact
           </div>
           
           <h3 class="text-4xl sm:text-5xl font-black text-slate-900 mb-6">
@@ -623,11 +703,11 @@
           </h3>
           
           <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            <strong class="text-slate-900">Gratis intake-gesprek</strong> van 30 minuten. We identificeren samen je beste AI-kans en maken een concrete roadmap.
+            <strong class="text-slate-900">Gratis intake</strong> van 30 minuten. We bespreken graag de mogelijkheden.
           </p>
         </div>
         
-        <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div class="grid lg:grid-cols-1 gap-12 items-start">
           <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl">
             <div class="mb-8">
               <div class="flex items-center gap-3 mb-4">
@@ -640,16 +720,23 @@
               </p>
             </div>
             
-            <form class="space-y-4">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+              <input type="hidden" name="access_key" value="5a88dd82-d433-4aed-aff0-7edd637ce315">
+              <input type="hidden" name="redirect" :value="successUrl">
+              <input type="hidden" name="subject" value="Nieuw contactformulier bericht - Genadium.com">
+              <input type="hidden" name="from_name" value="Genadium.com Marketing Page">
+              
               <div class="grid sm:grid-cols-2 gap-4">
                 <input 
                   type="text" 
+                  name="first_name"
                   placeholder="Voornaam *" 
                   required
                   class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
                 >
                 <input 
                   type="text" 
+                  name="last_name"
                   placeholder="Achternaam *" 
                   required
                   class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
@@ -657,17 +744,20 @@
               </div>
               <input 
                 type="email" 
+                name="email"
                 placeholder="Zakelijk e-mailadres *" 
                 required
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
               >
               <input 
                 type="tel" 
+                name="phone"
                 placeholder="Telefoonnummer *" 
                 required
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
               >
               <textarea 
+                name="message"
                 placeholder="Waar loop je tegenaan? Welk proces kost teveel tijd? (Optioneel)" 
                 rows="4" 
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg resize-none transition-colors"
@@ -687,78 +777,7 @@
             </form>
           </div>
           
-          <div class="space-y-6">
-            <!-- Urgency Box -->
-            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-3xl p-8 border border-red-200 shadow-lg">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg shadow-red-500/30">
-                  <ClockIcon class="h-8 w-8 text-white" />
-                </div>
-                <div>
-                  <h4 class="text-xl font-bold text-slate-900">⚠️ Beperkte beschikbaarheid</h4>
-                  <p class="text-red-700 font-semibold">Slechts 5 plekken per maand</p>
-                </div>
-              </div>
-              <p class="text-slate-700">
-                We accepteren maximaal <strong>5 nieuwe klanten per maand</strong> om kwaliteit te garanderen. 
-                Volgend beschikbare moment: <strong class="text-red-700">binnen 2 weken</strong>.
-              </p>
-            </div>
-            
-            <!-- Benefits -->
-            <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg">
-              <h4 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center">
-                  <CheckCircleIcon class="h-6 w-6 text-white" />
-                </div>
-                Wat je krijgt (gratis):
-              </h4>
-              
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <BoltIcon class="h-5 w-5 text-green-600 mt-1 shrink-0" />
-                  <div>
-                    <h5 class="font-semibold text-slate-900 mb-1">🎯 Procesanalyse ter waarde van €2.500</h5>
-                    <p class="text-slate-600 text-sm leading-5">We identificeren je 3 beste AI-kansen en maken een concrete roadmap</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <BoltIcon class="h-5 w-5 text-blue-600 mt-1 shrink-0" />
-                  <div>
-                    <h5 class="font-semibold text-slate-900 mb-1">⚡ Direct implementeerbare quick-wins</h5>
-                    <p class="text-slate-600 text-sm leading-5">Praktische tips die je meteen kunt toepassen, nog vóór je met ons werkt</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <BoltIcon class="h-5 w-5 text-purple-600 mt-1 shrink-0" />
-                  <div>
-                    <h5 class="font-semibold text-slate-900 mb-1">📊 ROI-calculatie van jouw AI-investering</h5>
-                    <p class="text-slate-600 text-sm leading-5">Concrete cijfers: hoeveel tijd en geld je gaat besparen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Social Proof -->
-            <div class="bg-gradient-to-r from-slate-900 to-blue-900 rounded-3xl p-8 text-white">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="flex -space-x-2">
-                  <div class="w-10 h-10 rounded-full bg-gradient-to-r from-emerald-400 to-blue-400 border-2 border-white"></div>
-                  <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 border-2 border-white"></div>
-                  <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 border-2 border-white"></div>
-                </div>
-                <div>
-                  <p class="font-bold">200+ bedrijven gingen je voor</p>
-                  <p class="text-blue-200 text-sm">Gemiddelde besparing: 15 uur per week</p>
-                </div>
-              </div>
-              <p class="text-slate-300 text-sm italic">
-                "Binnen 2 weken hadden we onze eerste AI Agent draaien. 
-                Van 4 uur handmatig werk naar 10 minuten controle." 
-                <strong class="text-white">— CFO, Tech Scale-up</strong>
-              </p>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
@@ -776,13 +795,13 @@
             <span class="text-slate-300">AI Agents that work for you</span>
           </div>
           <div class="flex items-center gap-6 text-slate-300">
-            <a href="#problem" class="hover:text-white transition-colors">Het Probleem</a>
-            <a href="#platform-service" class="hover:text-white transition-colors">Platform + Dienst</a>
+            <a href="#problem" class="hover:text-white transition-colors">Probleem</a>
+            <a href="#platform-service" class="hover:text-white transition-colors">Dienst</a>
             <a href="#contact" class="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
         <div class="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">
-          <p>© {{ new Date().getFullYear() }} Genadium. From conversation to innovation.</p>
+          <p>© {{ new Date().getFullYear() }} Genadium. AI Agents that work for you.</p>
         </div>
       </div>
     </footer>
@@ -790,6 +809,9 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import {
   ChatBubbleLeftIcon,
   RectangleGroupIcon,
@@ -817,4 +839,12 @@ import {
   BuildingOfficeIcon,
   QuestionMarkCircleIcon
 } from '@heroicons/vue/24/outline'
+
+// Success URL for form redirect
+const successUrl = computed(() => {
+  if (process.client) {
+    return `${window.location.origin}/success`
+  }
+  return '/success'
+})
 </script>

@@ -133,6 +133,16 @@
               </div>
             </Slide>
             
+            <Slide key="areaos">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/areaos_white.svg" 
+                  alt="Areaos"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
             <!-- Duplicate slides for seamless loop -->
             <Slide key="greenet-2">
               <div class="flex items-center justify-center h-24 px-8">
@@ -149,6 +159,16 @@
                 <img 
                   src="/images/intra.svg" 
                   alt="Intra"
+                  class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
+                />
+              </div>
+            </Slide>
+            
+            <Slide key="areaos-2">
+              <div class="flex items-center justify-center h-24 px-8">
+                <img 
+                  src="/images/areaos_white.svg" 
+                  alt="Areaos"
                   class="h-24 w-64 object-contain hover:opacity-80 transition-opacity duration-300"
                 />
               </div>

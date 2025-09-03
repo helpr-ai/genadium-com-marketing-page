@@ -1,32 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
-    <NuxtRouteAnnouncer />
-    
-    <!-- Header -->
-    <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-slate-200">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-        <a href="#" class="flex items-center gap-3">
-          <div class="h-9 w-9 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-700 grid place-content-center text-white shadow-lg">
-            <ChatBubbleLeftIcon class="h-5 w-5" />
-          </div>
-          <span class="font-bold tracking-tight text-lg">Genadium</span>
-          <span class="ml-1 px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-md">AI Agents that work for you</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="#solution" class="hover:text-slate-600">De Oplossing</a>
-          <a href="#problem" class="hover:text-slate-600">Het Probleem</a>
-          <a href="#approach" class="hover:text-slate-600 font-semibold">🎯 5-Staps Methode</a>
-          <a href="#contact" class="hover:text-slate-600">Contact</a>
-        </nav>
-        <div class="flex items-center gap-2">
-          <a href="#contact" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-700 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-purple-800">
-            Start nu 
-            <ArrowRightIcon class="h-4 w-4 ml-2" />
-          </a>
-        </div>
-      </div>
-    </header>
-
+  <div>
     <!-- Hero -->
     <section class="relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-radial from-blue-50 via-transparent to-transparent -z-10" />
@@ -174,6 +147,47 @@
               </div>
             </Slide>
           </Carousel>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Vacancy Section -->
+    <section class="py-12 bg-gradient-to-r from-emerald-500 to-blue-600 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-600/10 to-blue-600/10"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <div class="inline-flex items-center gap-3 px-6 py-2 bg-white/20 border border-white/30 rounded-full text-white font-semibold mb-4">
+            🌟 Vacature
+          </div>
+          
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+            Implementatie Specialist AI & Automatisering
+          </h3>
+          
+          <p class="text-xl text-white/90 mb-2">
+            <strong>Locatie:</strong> Hybride (Baarn / remote) • <strong>Dienstverband:</strong> part time/full time
+          </p>
+          
+          <p class="text-lg text-white/80 max-w-3xl mx-auto mb-8">
+            Als Implementatie Specialist ben jij de schakel tussen onze klanten en onze technologie. 
+            Je begeleidt organisaties bij de implementatie van AI Agents en automatisering van intake tot werkende oplossing.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <NuxtLink 
+              to="/careers" 
+              class="inline-flex items-center px-6 py-3 bg-white text-emerald-600 font-bold rounded-xl hover:bg-white/90 transition-all duration-300 shadow-lg"
+            >
+              Meer informatie
+              <ArrowRightIcon class="h-4 w-4 ml-2" />
+            </NuxtLink>
+            <a 
+              href="mailto:info@genadium.com?subject=Sollicitatie%20Implementatie%20Specialist" 
+              class="inline-flex items-center px-6 py-3 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-emerald-600 transition-all duration-300"
+            >
+              Direct solliciteren
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -801,62 +815,24 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-slate-900 text-white">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div class="flex items-center gap-3">
-            <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-blue-600 to-purple-700 grid place-content-center">
-              <ChatBubbleLeftIcon class="h-4 w-4" />
-            </div>
-            <span class="font-bold text-lg">Genadium</span>
-            <span class="text-slate-400">—</span>
-            <span class="text-slate-300">AI Agents that work for you</span>
-          </div>
-          <div class="flex items-center gap-6 text-slate-300">
-            <a href="#problem" class="hover:text-white transition-colors">Probleem</a>
-            <a href="#platform-service" class="hover:text-white transition-colors">Dienst</a>
-            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-          </div>
-        </div>
-        <div class="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">
-          <p>© {{ new Date().getFullYear() }} Genadium. AI Agents that work for you.</p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import 'vue3-carousel/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide } from 'vue3-carousel'
 import {
   ChatBubbleLeftIcon,
-  RectangleGroupIcon,
   RocketLaunchIcon,
   ArrowRightIcon,
   CheckCircleIcon,
-  WrenchScrewdriverIcon,
-  DocumentTextIcon,
-  ScaleIcon,
-  BoltIcon,
-  ShieldCheckIcon,
-  ClipboardDocumentListIcon,
-  GlobeAltIcon,
-  LightBulbIcon,
   CogIcon,
-  UserGroupIcon,
-  ComputerDesktopIcon,
   ExclamationTriangleIcon,
-  PuzzlePieceIcon,
-  ClockIcon,
   XMarkIcon,
   MapIcon,
   AcademicCapIcon,
   ClipboardDocumentCheckIcon,
-  BuildingOfficeIcon,
   QuestionMarkCircleIcon
 } from '@heroicons/vue/24/outline'
 

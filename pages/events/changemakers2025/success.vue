@@ -16,11 +16,13 @@
             />
           </div>
 
-          <!-- Success Icon -->
-          <div class="mb-8">
-            <div class="w-20 h-20 rounded-full bg-green-500 flex items-center justify-center mx-auto shadow-lg shadow-green-500/30">
-              <CheckCircleIcon class="h-12 w-12 text-white" />
-            </div>
+          <!-- Typing GIF -->
+          <div class="mb-12">
+            <img
+              src="/images/typing.gif"
+              alt="AI Agents at work"
+              class="h-40 sm:h-48 lg:h-56 w-auto mx-auto rounded-2xl shadow-2xl"
+            />
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-8">

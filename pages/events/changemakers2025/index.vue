@@ -83,21 +83,21 @@
                 name="name"
                 placeholder="Volledige naam *"
                 required
-                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
+                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg text-slate-900 placeholder-slate-500 transition-colors"
               >
               <input
                 type="text"
                 name="company"
                 placeholder="Bedrijf *"
                 required
-                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
+                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg text-slate-900 placeholder-slate-500 transition-colors"
               >
               <input
                 type="tel"
                 name="phone"
                 placeholder="Telefoonnummer *"
                 required
-                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
+                class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg text-slate-900 placeholder-slate-500 transition-colors"
               >
             </div>
 
@@ -189,8 +189,8 @@ useHead({
 // Success URL for form redirect
 const successUrl = computed(() => {
   if (process.client) {
-    return `${window.location.origin}/success`
+    return `${window.location.origin}/events/changemakers2025/success`
   }
-  return '/success'
+  return '/events/changemakers2025/success'
 })
 </script>

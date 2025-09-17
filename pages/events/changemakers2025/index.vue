@@ -97,6 +97,8 @@
                 name="phone"
                 placeholder="Telefoonnummer *"
                 required
+                pattern="[0-9\s\-\+\(\)]{10,}"
+                title="Voer een geldig telefoonnummer in van minimaal 10 cijfers"
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg text-slate-900 placeholder-slate-500 transition-colors"
               >
             </div>

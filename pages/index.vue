@@ -783,11 +783,13 @@
                 required
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
               >
-              <input 
-                type="tel" 
+              <input
+                type="tel"
                 name="phone"
-                placeholder="Telefoonnummer *" 
+                placeholder="Telefoonnummer *"
                 required
+                pattern="[0-9\s\-\+\(\)]{10,}"
+                title="Voer een geldig telefoonnummer in"
                 class="w-full px-4 py-4 border-2 border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors"
               >
               <textarea 

@@ -750,7 +750,7 @@
               </div>
               <h4 class="text-2xl font-bold text-slate-900 mb-2">Start vandaag nog</h4>
               <p class="text-slate-600">
-                <strong>Geen verplichtingen. Geen kosten.</strong> Wel direct inzicht in waar AI het meeste impact heeft voor jouw bedrijf.
+                <strong>Ontdek in een vrijblijvende kennismaking hoe Genadium AI laat werken voor jouw bedrijf.</strong>
               </p>
             </div>
             

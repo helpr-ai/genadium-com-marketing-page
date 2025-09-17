@@ -21,7 +21,7 @@
 
           <div class="max-w-2xl mx-auto space-y-6">
             <p class="text-xl text-slate-600 leading-relaxed">
-              We hebben je bericht ontvangen en zijn enthousiast om te horen over jouw AI-uitdagingen.
+              We hebben je bericht ontvangen en maken graag kennis!
             </p>
 
             <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xl">
@@ -31,25 +31,25 @@
                   <div class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center mt-0.5 flex-shrink-0">
                     <span class="text-white text-sm font-bold">1</span>
                   </div>
-                  <p class="text-slate-600">We bellen je <strong class="text-slate-900">binnen 4 uur terug</strong></p>
+                  <p class="text-slate-600">We nemen <strong class="text-slate-900">binnen 4 uur</strong> contact met je op.</p>
                 </div>
                 <div class="flex items-start gap-3">
                   <div class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center mt-0.5 flex-shrink-0">
                     <span class="text-white text-sm font-bold">2</span>
                   </div>
-                  <p class="text-slate-600">We bespreken jouw specifieke <strong class="text-slate-900">bedrijfsprocessen en uitdagingen</strong></p>
+                  <p class="text-slate-600">We plannen een <strong class="text-slate-900">gratis (online) intake</strong> van 30 minuten in </p>
                 </div>
                 <div class="flex items-start gap-3">
                   <div class="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center mt-0.5 flex-shrink-0">
                     <span class="text-white text-sm font-bold">3</span>
                   </div>
-                  <p class="text-slate-600">We plannen een <strong class="text-slate-900">gratis intake van 30 minuten</strong> in</p>
+                  <p class="text-slate-600">We laten je zien hoe Genadium werkt en hoe AI impact kan maken in jouw bedrijf.</p>
                 </div>
                 <div class="flex items-start gap-3">
                   <div class="w-6 h-6 rounded-full bg-pink-500 flex items-center justify-center mt-0.5 flex-shrink-0">
                     <span class="text-white text-sm font-bold">4</span>
                   </div>
-                  <p class="text-slate-600">We tonen je direct <strong class="text-slate-900">waar AI het meeste impact</strong> kan maken</p>
+                  <p class="text-slate-600">Samen aan de slag? Dan heb je al binnen 2 weken een heldere AI Roadmap voor jouw bedrijf! En een partner die je daarbij helpt.</p>
                 </div>
               </div>
             </div>

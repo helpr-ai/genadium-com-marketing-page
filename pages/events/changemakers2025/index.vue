@@ -63,11 +63,11 @@
           <div class="mb-8">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-              <span class="font-bold text-blue-700 text-sm">📞 We bellen je binnen 24 uur na het evenement</span>
+              <span class="font-bold text-blue-700 text-sm">📞 We bellen je binnen 24 uur na het evenement om een afspraak te plannen</span>
             </div>
             <h4 class="text-2xl font-bold text-slate-900 mb-2">Plan je vervolgafspraak</h4>
             <p class="text-slate-600">
-              <strong>Wat leuk dat we elkaar hebben ontmoet bij Change Makers 2025!</strong> We nemen contact op voor een persoonlijk gesprek over jouw specifieke AI-implementatiebehoeften.
+              <strong>Wat leuk dat we elkaar hebben ontmoet bij Change Makers 2025!</strong> We nemen contact op om een gesprek te plannen over hoe AI voor jou kan werken.
             </p>
           </div>
 
@@ -110,7 +110,7 @@
 
             <p class="text-xs text-slate-500 leading-5 text-center">
               🔒 Door te verzenden ga je akkoord met onze verwerking van je gegevens voor vervolgcontact.
-              <strong class="text-slate-700">We bellen je binnen 24 uur na het evenement</strong> om je specifieke behoeften te bespreken.
+              <strong class="text-slate-700">We bellen je binnen 24 uur na het evenement om een afspraak te plannen</strong> om je specifieke behoeften te bespreken.
             </p>
           </form>
         </div>

@@ -806,7 +806,7 @@
               
               <p class="text-xs text-slate-500 leading-5 text-center">
                 🔒 Door te verzenden ga je akkoord met onze verwerking van je gegevens voor contact. 
-                <strong class="text-slate-700">We bellen je binnen 4 uur terug</strong> om een afspraak te plannen.
+                <strong class="text-slate-700">We nemen binnen 4 uur contact met je op</strong> om een afspraak te plannen.
               </p>
             </form>
           </div>

@@ -746,7 +746,7 @@
             <div class="mb-8">
               <div class="flex items-center gap-3 mb-4">
                 <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span class="font-bold text-green-700 text-sm">📞 We bellen je binnen 4 uur terug</span>
+                <span class="font-bold text-green-700 text-sm">📞 We nemen binnen 4 uur contact met je op</span>
               </div>
               <h4 class="text-2xl font-bold text-slate-900 mb-2">Start vandaag nog</h4>
               <p class="text-slate-600">
